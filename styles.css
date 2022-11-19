@@ -1,14 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+:root {
+	--bg: #ffffff;
+	--fg: #373b41;
+	--bg-dark: #1d1f21;
+	--fg-dark: #c5c8c6;
+	--color0: #1d1f21;
+	--color1: #cc6666;
+	--color2: #b5bd68;
+	--color3: #f0c674;
+	--color4: #81a2be;
+	--color5: #b294bb;
+	--color6: #8abeb7;
+	--color7: #c5c8c6;
+	--color8: #969896;
+	--color9: #cc6666;
+	--colorA: #b5bd68;
+	--colorB: #f0c674;
+	--colorC: #81a2be;
+	--colorD: #b294bb;
+	--colorE: #8abeb7;
+	--colorF: #ffffff;
+}
+
 body {
-	font-family: 'Source Code Pro', monospace
+	font-family: 'Source Code Pro', monospace;
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 .title {
 	font-weight: bold;
+	line-height: 6pt;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
+}
+
+.command-output {
+	line-height: 14pt;
+	padding-top: 6pt;
+	color: var(--color8)
+}
+
+a {
+	color: var(--fg)
+}
+
+#title-mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 400pt) {
+	#title-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#title-desktop {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--bg-dark);
+		color: var(--fg-dark);
+	}
+	.command-output {
+		color: var(--color7)
+	}
+	a {
+		color: var(--fg-dark)
+	}
 }
