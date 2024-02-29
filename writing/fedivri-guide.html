@@ -1,0 +1,130 @@
+<!DOCTYPE html>  
+<html lang="IL">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>The Ultimate Hebrew Fedi Client Showdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style id="mkstylesheet">
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff;color:#303030;font-size:14px;line-height:1.45}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111}h4{color:#111}h5{color:#111}h6{color:#111;font-style:italic}p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color .2s ease-in-out;-moz-transition:color .2s ease-in-out;-o-transition:color .2s ease-in-out;-ms-transition:color .2s ease-in-out;transition:color .2s ease-in-out}a:hover{color:#3593d9}h1,h2,h3,h4,h5{margin:2.75rem 0 1rem;font-weight:600;line-height:1.15}h1{margin-top:0;font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}ul,ol,pre,table,blockquote{margin-top:.625em;margin-bottom:.625em}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}abbr,acronym{border-bottom:1px dotted #aaa}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-of-type{margin:0}li p+p{margin-top:16px}ul,ol{padding-left:2.5rem}#wrapper ol{list-style-position:outside}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc;color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}.mkstyle--swiss #wrapper aside.blurb:before{margin-top:.7em}
+#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.mk-rtl{direction:rtl;text-align:right}body.mkkatex-number-equations{counter-reset:eqnum}body.mkkatex-number-equations .katex-display{position:relative}body.mkkatex-number-equations .katex-display::after{counter-increment:eqnum;content:"(" counter(eqnum) ")";position:absolute;left:0;top:25%}body.mkkatex-number-equations.mkkatex-number-equations-right .katex-display::after{right:0;left:auto}.mkprinting,.mkprinting #wrapper{height:auto;margin-bottom:0;padding-bottom:0}.hideProgress #generated-toc,.hideProgress #firstdiff,.hideProgress #toc-title,.hideProgress #mkdocumentprogress,.hideProgress #mkincludechart,.hideProgress #mkprogressbar1,.hideProgress #mkprogressbar2,.hideProgress b.bookmark,.hideProgress .mkscrollmeter,.hideProgress #alllinks,.hideProgress #criticnav,.hideProgress .popup,.hideProgress #progressindicator,.hideProgress #mkautoscroll,.mkprinting #generated-toc,.mkprinting #firstdiff,.mkprinting #toc-title,.mkprinting #mkdocumentprogress,.mkprinting #mkincludechart,.mkprinting #mkprogressbar1,.mkprinting #mkprogressbar2,.mkprinting b.bookmark,.mkprinting .mkscrollmeter,.mkprinting #alllinks,.mkprinting #criticnav,.mkprinting .popup,.mkprinting #progressindicator,.mkprinting #mkautoscroll{display:none !important}.hideProgress .mkstyledtag,.mkprinting .mkstyledtag{display:none}.mkcolor-grammar-error,.mkcolor-spell-error{background:none;border-bottom:none}.mkprinting.mkshowcomments .mkstyledtag{display:inline;background:#ccc;padding:3px 9px;border-radius:20px;font-size:1}@media print{body{background:white;line-height:1.4}html,body,#wrapper{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;-webkit-perspective:none !important;-webkit-text-size-adjust:none;border:0;box-sizing:border-box;float:none;margin:0;max-width:100%;padding:0;margin-top:0;width:auto}.critic #wrapper mark.crit{background-color:#fffd38 !important;text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{border-bottom:none !important;color:inherit !important;cursor:default !important;text-decoration:none !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{border-bottom:solid 1px #666;display:block}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list{padding-left:3.3rem}.mkstyle--ink .task-list,.mkstyle--swiss .task-list{padding-left:3.3rem !important}.mkstyle--upstandingcitizen .task-list,.mkstyle--github .task-list{padding-left:3.6rem !important}.mkstyle--manuscript .task-list{padding-left:2.4rem !important}.mkstyle--amblin .task-list{padding-left:2.1rem !important}.mkstyle--grump .task-list{padding-left:1rem !important}.mkstyle--grump .task-list .task-list-item-checkbox{left:0 !important}.task-list .task-list-item{list-style-type:none !important;left:auto}.task-list .task-list-item .task-list-item-checkbox{-webkit-appearance:none;position:relative;left:auto}.task-list .task-list-item .task-list-item-checkbox:before{border:solid 1px #aaa;border-radius:2px;color:white;content:' ';display:block;font-weight:bold;height:1em;left:-1rem;line-height:1;position:absolute;text-align:center;top:-.75em;width:1em}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{background:#838387;content:'\2713'}}
+#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-type: upper-roman}#wrapper #generated-toc-clone>ul>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: decimal}#wrapper #generated-toc-clone>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal-leading-zero}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-greek}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>ul>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{}
+</style>
+
+<style id="mkprintstyles">@media print{#wrapper #generated-toc-clone,#generated-toc{display:none!important}h1:nth-of-type(n+2){page-break-before:always}h2{page-break-before:always}
+html,body,#wrapper{font-size:10pt!important}
+}
+</style>
+
+
+  </head>
+<body class="normal showpagebreaks">
+  <div id="wrapper">
+<h1 id="%D7%94%D7%A7%D7%A8%D7%91%D7%94%D7%90%D7%95%D7%9C%D7%98%D7%99%D7%9E%D7%98%D7%99%D7%91%D7%99%D7%A9%D7%9C%D7%AA%D7%95%D7%9B%D7%A0%D7%95%D7%AA%D7%9C%D7%A7%D7%95%D7%97%D7%A2%D7%91%D7%95%D7%A8%D7%A8%D7%A9%D7%AA%D7%95%D7%AA%D7%97%D7%91%D7%A8%D7%AA%D7%99%D7%95%D7%AA%D7%A4%D7%93%D7%A8%D7%98%D7%99%D7%91%D7%99%D7%95%D7%AA%D7%93%D7%95%D7%91%D7%A8%D7%95%D7%AA%D7%A2%D7%91%D7%A8%D7%99%D7%AA%D7%9C%D7%90%D7%99%D7%99%D7%A4%D7%95%D7%9F">הקרב האולטימטיבי של תוכנות לקוח עבור רשתות חברתיות פדרטיביות דוברות עברית לאייפון</h1>
+
+<h3 id="%D7%9E%D7%94%D7%93%D7%95%D7%A8%D7%AA%D7%A4%D7%91%D7%A8%D7%95%D7%90%D7%A82024">מהדורת פברואר 2024</h3>
+
+<h4 id="%D7%9E%D7%90%D7%AA%D7%93%D7%95%D7%93%D7%A7%D7%9C%D7%95%D7%98%D7%94dktooot.im">מאת דוד קלוטה <a href="https://tooot.im/@dk">(@dk@tooot.im)</a></h4>
+
+<h3 id="%D7%A4%D7%AA%D7%97%D7%93%D7%91%D7%A8">פתח דבר</h3>
+
+<p>כתוצאה <a href="https://www.the7eye.org.il/509520">מסקנדלים</a> <a href="https://www.themarker.com/weekend/2023-10-27/ty-article-magazine/.highlight/0000018b-6ba7-d14c-adfb-efbf70820000">חוזרים</a> <a href="https://www.theverge.com/2024/2/17/24075670/reddit-ai-training-license-deal-user-content">ונשנים</a> בהן מעורבות הרשתות החברתיות הממסדיות, לאחרונה התפתח עניין ציבורי סביב מדיה חברתית מבוזרת (להלן: <a href="https://digitalwords.net/fediverse/intro/">הפדיוורס</a>). עם זאת, דובקת בפדיוורס מעין תדמית של רשת מסובכת ומתוסבכת, אשר מהווה שנמוך משמעותי מחוויית המשתמש של הרשתות המסחריות. מבט ברשימת היישומים הזמינים עבור רשת מסטודון למכשירי iOS מציג 18 יישומים שונים, עם הבדל רציני ברמת התכונות, התמיכה, והמודל העסקי של היישומים. מדריך זה ישווה בין מספר יישומים פופולריים עבור רשתות כאלה לפלטפורמת iOS, מנקודת מבט של משתמש הכותב בשפה העברית.</p>
+
+<h3 id="%D7%9E%D7%AA%D7%95%D7%93%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%94%D7%95%D7%A7%D7%94%D7%9C%D7%99%D7%A2%D7%93">מתודולוגיה וקהל יעד</h3>
+
+<p>קהל היעד של מדריך זה הינו משתמש לשעבר ברשתות המסחריות (עם דגש על רשת 𝕏, לשעבר טוויטר, שבבעלות אילון מאסק), המוכנה לעבור לאחת מרשתות <a href="https://fedivri.hed.im">&#8220;הפדעברי&#8221;</a>, ומחזיק בטלפון סלולרי מסוג אייפון. המדריך יסרוק מגוון של יישומים, ויבחן אותם על פי הקריטריונים הבאים:</p>
+
+<ul>
+<li>האם היישום נתמך ע״י המפתח</li>
+<li>האם היישום תומך בהצגת פוסטים בשפות אשר נכתבות מימין לשמאל (עברית, ערבית, פרסית)</li>
+<li>נוחות ההרשמה לרשת מתוך היישום</li>
+<li>תמיכה ברשתות שונות מ<a href="https://joinmastodon.org">רשת מסטודון</a> (לדוגמה <a href="https://hayu.sh">היו.ש</a>, המבוססת על רשת <a href="https://gitlab.com/soapbox-pub/rebased">ריבייסד</a>)</li>
+<li>זמינות של יישומים לטאבלט ולמחשב בנוסף לגרסת הטלפון</li>
+<li>תמיכה במאפייני נגישות</li>
+<li>האם היישום מופץ תחת רישיון חופשי / קוד פתוח</li>
+<li>מה המודל העסקי של היישום</li>
+</ul>
+
+<h3 id="%D7%94%D7%9E%D7%AA%D7%9E%D7%95%D7%93%D7%93%D7%99%D7%9D">המתמודדים</h3>
+
+<p>מדריך זה יסקור את היישומים הבאים:</p>
+
+<ul>
+<li><a href="https://apps.apple.com/il/app/mastodon-for-iphone-and-ipad/id1571998974">היישום הרשמי של מסטודון</a> מבית <a href="https://joinmastodon.org">מלכ״ר מסטודון</a></li>
+<li>היישום <a href="https://apps.apple.com/il/app/toot-for-mastodon/id1229021451">Toot!</a> מאת <a href="https://mastodon.social/@WAHa_06x36">דאג אגרן</a></li>
+<li>היישום <a href="https://apps.apple.com/il/app/ivory-for-mastodon-by-tapbots/id6444602274">Ivory</a> מבית <a href="https://tapbots.com">טאפבוטס</a></li>
+<li>היישום <a href="https://apps.apple.com/il/app/mona-for-mastodon/id1659154653">Mona</a> מאת <a href="https://mastodon.social/@jonny_kuang">ג׳וני קואנג</a></li>
+<li>היישום <a href="https://apps.apple.com/il/app/ice-cubes-for-mastodon/id6444915884">Ice Cubes</a> מאת <a href="https://github.com/Dimillian">תומא ריקואר</a></li>
+</ul>
+
+<h3 id="%D7%94%D7%99%D7%99%D7%A9%D7%95%D7%9D%D7%94%D7%A8%D7%A9%D7%9E%D7%99%E2%80%94%D7%91%D7%99%D7%AA%D7%A0%D7%99%D7%99%D7%A8%D7%A2%D7%9D%D7%A7%D7%91%D7%9C%D7%AA%D7%A4%D7%A0%D7%99%D7%9D%D7%9E%D7%A6%D7%95%D7%99%D7%99%D7%A0%D7%AA">היישום הרשמי — בית נייר עם קבלת פנים מצויינת</h3>
+<!--Official app-->
+
+<figure>
+<img src="https://i.imgur.com/XqdiFR2.png" alt="צילומי מסך של היישום הרשמי" />
+<figcaption>צילומי מסך של היישום הרשמי</figcaption>
+</figure>
+
+<p>היישום הרשמי, כתוצאה מהקשר בינו לפלטפורמה עצמה, עושה מספר דברים באופן מצויין. זה היישום היחיד מבין היישומים המסוקרים אשר מאפשר להירשם לשרת ישירות מתוך היישום, והוא אף ממליץ על שרת אקראי, מתוך <a href="https://joinmastodon.org/servers">רשימת השרתים של מסטודון</a>, בשפה של ההתקן (אם זאת, יש לציין כי שרת הפדעברי היחד אשר מופיע ברשימה של מסטודון הוא <a href="https://tooot.im">תווות.ים</a>). עם זאת, היישום הרשמי סובל מרשימת תכונות לוקה בחסר (האורך של תפריט ההגדרות של היישום משעשע), ולא קיימת ביישום תמיכה בקוראי מסך או בטקסט מוגדל. קיימת ליישום גם גרסה לטאבלט, אשר מנצלת את המקום הנוסף באופן סביר (תיוגים פופולריים על יד ציר הזמן), אך לא גרסה למחשב (בשביל זה יש את האתר).<br/>
+יש לציין כי היישום חינמי, מופץ תחת <a href="https://github.com/mastodon/mastodon-ios/blob/develop/LICENSE">רישיון GPL גרסה 3 של GNU</a>, ופיתוח היישום ממומן ע״י תרומות למלכ״ר מסטודון.</p>
+
+<h3 id="toot%E2%80%94%D7%99%D7%99%D7%A9%D7%95%D7%9D%D7%9E%D7%9C%D7%90%D7%A1%D7%92%D7%A0%D7%95%D7%9F%D7%90%D7%9A%D7%9E%D7%A2%D7%95%D7%A4%D7%A9">Toot! — יישום מלא סגנון, אך מעופש</h3>
+<!--Toot! app-->
+
+<figure>
+<img src="https://i.imgur.com/Qc1qpm9.png" alt="צילומי מסך של היישום Toot!" />
+<figcaption>צילומי מסך של היישום Toot!</figcaption>
+</figure>
+
+<p>מדי פעם מופיע יישום שפשוט ניתן לומר עליו שהוא <strong>כיפי</strong>. מהאייקון החמוד, אל אנימציית הכוכבים בעת פתיחה של היישום, ועד למשחק הביליארד הכלול שבו על הכדורים נמצאות תמונות הפרופיל של המשתמשים הנעקבים, לקרוא ל-Toot! יישום משעמם יהיה שקר גס. היישום תומך גם בקוראי מסך ובשינוי הגופן לגופן <a href="https://opendyslexic.org">OpenDyslexic</a> (באנגלית בלבד). היישום מתחיל להיראות פתות נחמד כאשר נלקחת בחשבון העובדה שהעדכון האחרון הופץ לפני 11 חודשים (נכון לכתיבת שורה זאת), ויש ליישום מעין היסטוריה של המתנות ארוכות למדיי בין עדכונים. קיימת ליישום גרסת טאבלט, שלמרות ממשקה הבסיסי יחסית, נוחה למדיי לשימוש.<br/>
+היישום עולה 14.90 ש״ח, ומופץ תחת רישיון מסחרי.</p>
+
+<p>שני היישומים הנ״ל הגיעו ממקום דומה: יישומי טוויטר במקור, שכתוצאה <a href="https://www.macrumors.com/2023/01/20/twitter-bans-third-party-apps/">מהמלחמה של טוויטר ביישומי צד שלישי</a> הוסבו לרשת מסטודון. </p>
+
+<h3 id="ivory%E2%80%94%D7%90%D7%9C%D7%92%D7%A0%D7%98%D7%99%D7%95%D7%AA%D7%9C%D7%A9%D7%9E%D7%94">Ivory — אלגנטיות לשמה</h3>
+<!--Ivory app-->
+
+<figure>
+<img src="https://i.imgur.com/2aSw0Gm.png" alt="צילומי מסך של היישום Ivory" />
+<figcaption>צילומי מסך של היישום Ivory</figcaption>
+</figure>
+
+<p>אי שם, בעולם שכבר איננו, היה קיים יישום טוויטר בשם <a href="https://tapbots.com/tweetbot/">Tweetbot</a>. היא הציגה את טוויטר, אבל מסביב לממשק מתוכנן בקפידה, ללא פרסומות, ועם כלי אנליטיקה חזקים אשר הציגו את כמות האינטרקציות של כל הפוסטים בחשבון. כתוצאה מהטיהור, היישום עבר למסטודון, ורבות (הח״מ נמנה איתם) עברו לפדיוורס <strong>רק</strong> בגלל זמינות היישום. כל מה שהיה טוב בנוגע ל-Tweetbot, היישום מרגיש מלוטש לחלוטין בכל רמ״ח איבריו, והוא מתעדכן באופן תדיר. קיימת גם גרסה לטאבלט, שאולי לא תומכת בעמודות מרובות, אך ניתן (באופן כלשהו) לפתור את הבעיה עם תמיכה בחלונות מרובים. אך מדי פעם, דברים פשוט טובים מכדי להיות נכונים. כל המצויין לעיל לא רלוונטי כלל למשתמשי <a href="https://hayu.sh">היו.ש</a>, כהשלכה מכך שהיישום עובד עם שרתי מסטודון בלבד. היישום הוא גם היקר מבין היישומים המסוקרים, בעלות שנתית של 50 ש״ח עבור הגרסה לטלפון ולטאבלט, ועוד 50 ש״ח עבור גרסה למחשב.</p>
+
+<h3 id="mona%E2%80%94%D7%90%D7%95%D7%9C%D7%A8%D7%A9%D7%95%D7%95%D7%99%D7%A6%D7%A8%D7%99">Mona — אולר שוויצרי</h3>
+<!--Mona app-->
+
+<figure>
+<img src="https://i.imgur.com/vjcGuVG.png" alt="צילומי מסך של היישום Mona" />
+<figcaption>צילומי מסך של היישום Mona</figcaption>
+</figure>
+
+<p>כמובן, מצב בו קיים רק יישום פרימיום מושקע אחד לא בהכרח כזה טוב. הפיתוח של היישום Mona מוקד בעיקר בפיצ׳רים מתקדמים שחלקם יחידם במינם (לפחות ברשימת היישומים הזו). בין התכונות הבולטות ניתן למנות תצוגת מספר חלונות במקביל (בד״כ זה קטע של אנדרואיד!), אין ספור הגדרות התאמה אישית, פער ניכר מבחינת תמיכה בנגישות, תמיכה בשרתי Pleroma, Rebased, ו-Akkoma (בניגוד ל-Ivory), וכל זה בתשלום חד-פעמי של 40 ש״ח (זול יותר משנה של Ivory). אבל (לפחות לי) קיימים מספר סייגים בנוגע לגרסת המחשב של היישום, שקיימות בה מספר החלטות עיצוב לא-בדיוק-אורתודוכסיות (ספציפית לא זורם לי איך שהיישום מציג מספר עמודות בו-זמנית).</p>
+
+<h3 id="icecubes%E2%80%94%D7%9E%D7%A2%D7%91%D7%A8%D7%9C%D7%9E%D7%A6%D7%95%D7%A4%D7%94%D7%90%D7%91%D7%9C%D7%9C%D7%90%D7%9E%D7%95%D7%A9%D7%9C%D7%9D">Ice Cubes — מעבר למצופה, אבל לא מושלם</h3>
+<!--Ice Cubes App-->
+
+<figure>
+<img src="https://i.imgur.com/eeUAkwA.png" alt="צילומי מסך של היישום Ice Cubes" />
+<figcaption>צילומי מסך של היישום Ice Cubes</figcaption>
+</figure>
+
+<p>דעותיי בנוגע ליישום Ice Cubes טיפה מעורערות. מצד אחד, זה בטח היישום הכי טוב שאפשר להשיג בחינם, הוא גם חופשי <a href="https://github.com/Dimillian/IceCubesApp/blob/main/LICENSE">(AGPL 3.0)</a>, ונתמך על כל פלטפורמה של אפל, ובאופן ייחודי לרשימה זו, <a href="https://twiiit.com/Dimillian/status/1753119580665356381">גם על המשקפיים</a>. לצערי, התמיכה בעברית ביישום לוקה בחסר, ולמרות שהטקסט מוצג מימין לשמאל, לוגיקת אורך השורה עובדת לפי משמאל לימין. אם סקירה זו תגיע למפתח SwiftUI כלשהו, שיפור התמיכה בשפות מימין לשמאל יהיה שיפור אדיר לקהילה.</p>
+
+<h3 id="%D7%9C%D7%A1%D7%99%D7%9B%D7%95%D7%9D">לסיכום</h3>
+<!--Epilogue-->
+
+<p>סביבת היישומים עבור מסטודון, <a href="https://daringfireball.net/2009/04/twitter_clients_playground">טיפה כמו המצב עם יישומי טוויטר בימים עברו</a>, הם מעין מגרש משחקים מבחינת תכונות, מודלים עסקיים, וחוויית שימוש. הגענו למצב בו מספר יישומים ברמה גבוהה ביותר, ולכל יישום העדפות משלו. מצב זה יגרום לשיפור משמעותי מבחינת חווית משתמש בטווח הארוך, בו כל יישום יוסיף תכונות שמייחדות אותו. את זה לא ניתן לומר על רשתות חברתיות סגורות יחסית, כמו <a href="https://bsky.app">בלוסקיי</a>, או <a href="https://threads.net">ת׳רדס</a> של תאגיד מטא פלטפורמות, לשעבר פייסבוק. באשר ליישום הטוב ביותר, משתמש המעדיפה יציבות וגימור כנראה יעדיף את Ivory, בעוד עבור חובב ההתאמה האישית, Mona יותר יתאים לה. Mona גם זוכה באפשרויות הנגישות הטובות ביותר, ואילו לטהרני תוכנה חופשית, (<a href="https://www.gnu.org/proprietary/malware-apple.html">שאין לי כלל מושג למה הן משתמשות באייפון</a>), אין יותר טוב מאשר Ice Cubes. חשוב גם לציין לשבח את היישום הרשמי, שמספק את חווית ההרשמה היחידה מבין היישומים המסוקרים, מה שיועיל למשתמשות חדשות.</p>
+
+<p>נתראה בפדעברי!</p>
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+
+
+
+<script>!function(e){"function"==typeof define&&define.amd?define("bidi_helpers",[],e):window.bidi_helpers=e()}(function(){var c={Dir:{RTL:-1,UNKNOWN:0,LTR:1},Format:{LRE:"‪",RLE:"‫",PDF:"‬",LRM:"‎",RLM:"‏"},ltrChars_:"A-Za-zÀ-ÖØ-öø-ʸ̀-֐ࠀ-῿Ⰰ-﬜︀-﹯﻽-￿",rtlChars_:"֑-߿יִ-﷿ﹰ-ﻼ"};return c.ltrDirCheckRe_=new RegExp("^[^"+c.rtlChars_+"]*["+c.ltrChars_+"]"),c.ltrCharReg_=new RegExp("["+c.ltrChars_+"]"),c.hasAnyLtr=function(e){return c.ltrCharReg_.test(e)},c.rtlDirCheckRe_=new RegExp("^[^"+c.ltrChars_+"]*["+c.rtlChars_+"]"),c.rtlRe=c.rtlDirCheckRe_,c.isRtlText=function(e){return c.rtlDirCheckRe_.test(e)},c.isLtrText=function(e){return c.ltrDirCheckRe_.test(e)},c.isRequiredLtrRe_=/^http:\/\/.*/,c.hasNumeralsRe_=/\d/,c.estimateDirection=function(e,t){for(var r=0,n=0,s=!1,i=e.split(/\s+/),l=0;l<i.length;l++){var o=i[l];c.isRtlText(o)?(r++,n++):c.isRequiredLtrRe_.test(o)?s=!0:c.hasAnyLtr(o)?n++:c.hasNumeralsRe_.test(o)&&(s=!0)}return 0==n?s?c.Dir.LTR:c.Dir.UNKNOWN:t<r/n?c.Dir.RTL:c.Dir.LTR},c}),function(e){"function"==typeof define&&define.amd?define("bidiweb",["bidi_helpers"],e):window.bidiweb=e(bidi_helpers)}(function(l){var s={};s.processors={css:function(t){return{makeRtl:function(e){e.classList.add(t.rtl)},makeLtr:function(e){e.classList.add(t.ltr)}}},style:function(t){return{makeRtl:function(e){e.style.direction="rtl",t&&(e.style.textAlign="right")},makeLtr:function(e){e.style.direction="ltr",t&&(e.style.textAlign="left")}}}};return s.process=function(e,t){var r,n;return e instanceof NodeList?r=e:e instanceof Node?((n=[e]).item=function(e){return n[e]},r=n):r=document.querySelectorAll(e),s.process_elements(r,t),r},s.process_elements=function(e,t){for(var r=0;r<e.length;r++){var n=e.item(r),s=n.textContent||n.value||n.placeholder||"",i=l.estimateDirection(s,.4);i==l.Dir.RTL?t.makeRtl(n):i==l.Dir.LTR&&t.makeLtr(n)}},s.process_css=function(e,t){var r=s.processors.css(t);return s.process(e,r)},s.process_style=function(e,t){var r=s.processors.style(t);return s.process(e,r)},s.style=function(e){return s.process_style(e,!0)},s.css=function(e){return s.process_css(e,{rtl:"mk-rtl",ltr:"mk-ltr"})},s.htmlToElement=function(e){var t=document.createElement("div");return t.innerHTML=e,t},s.html_css=function(e){var t=s.htmlToElement(e),r=t.querySelectorAll("*");return s.css(r),t.innerHTML},s.html_style=function(e){var t=s.htmlToElement(e),r=t.querySelectorAll("*");return s.style(r),t.innerHTML},s});</script>
+
+<script>bidiweb.css('#wrapper *');</script>
+
+</body>
+</html>
